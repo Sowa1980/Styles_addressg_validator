@@ -1,0 +1,136 @@
+
+meta
+{
+  title: "Валидатор адреса";
+  author: "Панкратов Александр Владимирович https://www.openstreetmap.org/user/Sowa1980";
+  version: "1.00_2022-10-28";
+  description: "Валидатор адреса";
+}
+
+/* адрес верный */
+
+area[building][addr:country=RU][addr:region][addr:city]
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: Gold;
+}
+
+area[building:part][addr:country=RU][addr:region][addr:city]
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: Gold;
+}
+
+/* Частично ошибки */
+
+area[building][addr:country=RU]::tt
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: Orange;
+}
+
+area[building][addr:region]::tt
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: Orange;
+}
+
+area[building][addr:city]::tt
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: Orange;
+}
+
+area[building:part][addr:country=RU]
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: Orange;
+}
+area[building:part][addr:region]
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: Orange;
+}
+area[building:part][addr:city]
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: Orange;
+}
+
+/* Ошибка здание только с номером */
+
+area[addr:housenumber][!addr:country][!addr:region][!addr:city]::tt
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: red;
+}
+
+
+/* Ошибка здание без номера */
+
+area[building][addr:country][addr:region][addr:city][addr:street][!addr:housenumber]
+{
+  text: auto;
+  text-color: Black;
+  font-size: 12;
+  text-position: center;
+  text-halo-radius: 3;
+  text-halo-color: white;
+  width: 10;
+  color: red;
+}
+
