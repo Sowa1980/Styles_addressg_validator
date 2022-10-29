@@ -1,7 +1,7 @@
 Валидатор адреса
 Стиль для JOSM, служит для визуалиции тегов адреса и облегчения картирования в программе.
 
-icon
+![icon](https://github.com/Sowa1980/Styles_addressg_validator/blob/main/screen.png)
 
 Языки локализации:
 Русский.
