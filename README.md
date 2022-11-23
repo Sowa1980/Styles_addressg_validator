@@ -2,7 +2,9 @@
 Стиль для JOSM, служит для визуалиции наполненности тегов RU адреса и облегчения картирования в программе.
 
 красный цвет означает нет тегов [addr:housenumber] но есть теги [!addr:country][!addr:region][!addr:city]
+
 оранжевый цвет означает нет одного из тегов [addr:country=RU][addr:region][addr:city]
+
 желтый цвет означает наличе тегов [addr:country=RU][addr:region][addr:city]
 
 
