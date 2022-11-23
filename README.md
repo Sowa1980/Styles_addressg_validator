@@ -1,7 +1,7 @@
 Валидатор адреса
 Стиль для JOSM, служит для визуалиции наполненности тегов RU адреса и облегчения картирования в программе.
 
-красный цвет означает нет тегов [addr:housenumber] но есть теги [!addr:country][!addr:region][!addr:city]
+красный цвет означает есть тег [addr:housenumber] но нет теов [!addr:country][!addr:region][!addr:city]
 
 оранжевый цвет означает нет одного из тегов [addr:country=RU][addr:region][addr:city]
 
